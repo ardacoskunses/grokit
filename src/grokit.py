@@ -24,6 +24,9 @@ Typical Usage:
     grokit.exe --action=start
     grokit.exe --action=stop
 
+    3. Reindex project
+    grokit.exe --ppath=<path to project source> --action=reindex
+
     Please send your comments / suggestions to raghu.sesha@gmail.com
 """
 
@@ -35,6 +38,7 @@ So, if you want single project, make sure that PPATH has only one child director
 action_help="""
 Action to be performed.  Can be one of (setup|start|stop):
 - setup: Setup opengrok for the project source present at PPATH.
+- reindex: reindex changed project source.
 - start: Start the tomcat server
 - stop:  Stop the tomcat server"""
 
